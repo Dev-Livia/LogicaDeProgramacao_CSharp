@@ -10,6 +10,7 @@ namespace Aula03
     {
         static void Main(string[] args)
         {
+
             CultureInfo CI = CultureInfo.InvariantCulture;
             string nome;
             char sexo;
@@ -19,8 +20,9 @@ namespace Aula03
             nome = "Lívia Nicole";
             sexo = 'F';
             idade = 20;
+            salario = 500000.99;
 
-
+            Console.WriteLine("A Patroa " + nome + " recebe " + salario.ToString("F2",CI) + " Semanais e tem "+ idade + " anos");
         }
     }
 }
